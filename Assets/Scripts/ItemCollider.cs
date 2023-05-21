@@ -6,6 +6,7 @@ using TMPro;
 public class ItemCollider : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI applesText;
+    [SerializeField] private AudioSource collectSoundEffect;
     private int apples = 0;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,7 @@ public class ItemCollider : MonoBehaviour
             // Remove item
             Destroy(collision.gameObject);
             apples ++;
+            collectSoundEffect.Play();
             // Debug.Log("Apples: "+apples);
             applesText.text = "Apples: " + apples;
         }

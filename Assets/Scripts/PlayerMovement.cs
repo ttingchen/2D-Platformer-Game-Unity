@@ -11,9 +11,11 @@ public class PlayerMovement : MonoBehaviour
     private float dirx = 0f;
     // [SerializeField] enable toggle by Unity UI
     [SerializeField] private float moveSpeed = 7f;
-    [SerializeField] private float jumpForce = 14f;
+    [SerializeField] private float jumpForce = 10f;
 
     private enum MoveState {idle, running, jumping, falling}
+
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     // Start is called before the first frame update
     private void Start()
@@ -37,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump")) // Jump
         {
             player.velocity = new Vector2(player.velocity.x, jumpForce);
+            jumpSoundEffect.Play();
         }
 
         UpdateAnimation();
