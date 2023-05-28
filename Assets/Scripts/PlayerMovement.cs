@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Edit>>Preference>>external tool>>check the first two boxed of VS
         // and then regenerate project to enable auto complete
-        Debug.Log("Hello, world!");
+        // Debug.Log("Hello, world!");
         player = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
