@@ -9,10 +9,18 @@ EditorBuildSettings:
     path: Assets/Pixel Adventure 1/Scenes/Demo.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Start Menu.unity
+    guid: 0334abbbc67a64f49875a6b65249ed9f
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 310854fbc2918594d845777a83e4ee50
+  - enabled: 1
+    path: Assets/Scenes/End Menu.unity
+    guid: 8e0ac6fbe94b2fc4e98b4b1af0794ad4
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: dab1ae779752cb94ebfc4412c1ec2f0c, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: a7b3fb5ac8271814e8786129a94e4989, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 64146a7b9359621418f1216d9bab48b9, type: 2}

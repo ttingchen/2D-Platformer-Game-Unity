@@ -25,6 +25,7 @@ public class Finish : MonoBehaviour
     private void CompleteLevel()
     {
         // using UnityEngine.SceneManagement;
+        // Unity> File > Build setting > add open scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
